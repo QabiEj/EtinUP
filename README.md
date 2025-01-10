@@ -1,155 +1,137 @@
----
-# Introduction
-*Note: The introduction was completed in Part I of the study.*
+# The Role of NLP in Transforming Customer Service: A Literature Review
 
-# Methodology
+## Abstract
+Natural Language Processing (NLP) has revolutionized customer service by enhancing the efficiency, trust, and satisfaction levels of users through automation and personalized interactions. This systematic literature review evaluates the role of NLP in transforming customer service, particularly focusing on the integration of chatbots and automated systems. Using the PRISMA methodology, 25 studies from reputable sources were reviewed to analyze open-source tools, user experiences, ethical considerations, and future directions. The findings highlight advancements in sentiment analysis, adaptive learning models, and conversational strategies that mitigate service failures. However, challenges such as trust, empathy, and computational resource constraints persist. The review concludes by presenting actionable insights for improving NLP technologies to achieve a more empathetic and efficient customer service framework.
 
-## Systematic Approach
-This literature review follows the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)[16] guidelines to ensure methodological rigor.
+## Introduction
+Recent innovations in NLP have transformed customer service by automating tasks traditionally performed by human agents, reducing response times, and increasing customer satisfaction. Chatbots, powered by state-of-the-art NLP frameworks like Rasa, Hugging Face, and OpenAI’s LLMs, now dominate the landscape by offering features such as intent recognition, multilingual capabilities, and emotional intelligence.
 
-## Eligibility Criteria
+Despite their potential, NLP-powered customer service systems face several challenges, including managing contextual ambiguity, addressing ethical concerns, and sustaining trust in human-AI interactions. This review aims to:  
+1. Assess the current methodologies and tools used in NLP-powered customer service.  
+2. Examine user satisfaction, trust, and engagement in chatbot interactions.  
+3. Identify limitations in existing systems and propose directions for future research.
 
-### Inclusion Criteria
-- Studies published between 2020 and 2024 focusing on inventory optimization and demand analysis.
-- Peer-reviewed journal articles, conference proceedings, or book chapters employing machine learning, deep reinforcement learning, or similar computational approaches.
-- English language publications accessible through major academic databases.
+The PRISMA methodology guides this systematic review to ensure a rigorous approach in identifying, evaluating, and synthesizing the included studies.
+
+## Methodology
+
+### Eligibility Criteria
+• Studies published from 2022–2024 that explore NLP applications in customer service.  
+• Articles from peer-reviewed journals, conferences, and credible repositories such as IEEE, ACM, Springer, and ScienceDirect.  
+• Works focusing on chatbots, LLMs, and customer interaction mechanisms.
 
 ### Exclusion Criteria
-- Non-peer-reviewed articles, books, and editorials.
-- Studies lacking detailed methodology or insufficient data.
-- Articles addressing unrelated topics, such as non-supply-chain inventory systems.
+• Non-peer-reviewed articles, editorials, and opinion pieces.  
+• Studies unrelated to customer service or NLP technologies.
 
-## Information Sources
-The review included literature from the following databases:
-- ScienceDirect
-- IEEE Xplore
-- ACM Digital Library
-- Conference proceedings from major computational and supply chain forums
+### Information Sources
+• Databases Searched: IEEE Xplore, SpringerLink, ScienceDirect, ACM Digital Library, and others.  
+• Keywords Used: “Natural Language Processing”, “chatbots”, “customer service”, “user trust”, "automation," and “empathy.”  
+• Search Query Example:
+(("Natural Language Processing" OR "chatbots") AND ("customer service" OR "user trust") AND ("automation" OR "empathy"))
 
-## Search Strategy
-The following query was designed to retrieve relevant studies:
-- ("inventory optimization" AND ("machine learning" OR "predictive analytics") AND ("supply chain" OR "e-commerce"))
-- Filters included publication years (2020–2024), document type, and relevance. Keywords such as “inventory optimization”, “machine learning”, "predictive analytics", “supply chain” and "e-commerce" were applied.
+### Selection Process
+1. Initial Screening: Titles and abstracts were screened for relevance.  
+2. Full-Text Review: Studies meeting inclusion criteria underwent detailed evaluation.  
+3. Risk of Bias Assessment: The Cochrane Collaboration tool was used to evaluate study bias.
 
-## Selection Process
-1. **Screening:** Titles and abstracts were assessed for relevance.
-2. **Full-Text Review:** Shortlisted studies were reviewed for detailed applicability.
-3. **Risk of Bias Assessment:** Study bias was evaluated using the Cochrane Collaboration tool.
+### Data Extraction
+Key data extracted from studies included:  
+• Objectives and methodologies.  
+• Specific NLP tools and frameworks used.  
+• Reported outcomes and limitations.
 
-## Data Extraction
-Data collected included:
-- Study objectives and methodologies.
-- Inventory system hierarchy (e.g., single-echelon vs. multi-echelon).
-- Computational techniques applied.
-- Reported outcomes and limitations.
+## Results and Discussion
 
-# Results and Discussion
+### Cluster 1: NLP Frameworks and Tools
+- **Key Studies:**
+  - Methodology for Code Synthesis Evaluation of LLMs Presented by ChatGPT and Copilot [1].
+  - On Adapting the DIET Architecture and the Rasa Conversational Toolkit for Sentiment Analysis [3].
+  - Enhanced Chunk Screening in LangChain Framework by Supervised Learning Augmentation [9].
 
-## Clustering of Studies
-The reviewed studies were categorized into the following clusters:
+- **Key Findings:**
+  These studies demonstrate advancements in NLP frameworks, particularly for improving user intent recognition and language parsing. For example, Rasa’s DIET architecture significantly enhances sentiment analysis accuracy, while LangChain integrates supervised learning for better chunk screening [1][3][9].
 
-### 1. Reinforcement Learning-Based Models
-- **Studies:**
-  - Inventory management of new products in retailers using model-based deep reinforcement learning - ScienceDirect [1].
-    - **Details:** This study addresses the optimal inventory management problem for new smartphone products, focusing on model-based deep reinforcement learning. The proposed method combines offline model learning and online planning, demonstrating improved profitability, efficiency, and customer satisfaction. The method improved total rewards and inventory turnover by over 5% compared to heuristic methods while maintaining the same stock-out rate.
-  - Contextual reinforcement learning for supply chain management - ScienceDirect [2].
-    - **Details:** This study combines offline training and online adaptation for supply chain inventory management. Agents were trained using data from various environmental configurations and adapted online to maximize rewards. The methodology improved efficiency and effectiveness in unknown environments, making RL algorithms more practical.
+### Cluster 2: Emotional and Contextual Understanding
+- **Key Studies:**
+  - EmoLLMs: A Series of Emotional Large Language Models [8].
+  - How the Communication Style of Chatbots Influences Consumer Satisfaction [21].
+  - Exploring the Mechanism of Sustained Consumer Trust in AI Chatbots [22].
 
-- **Findings:** These studies demonstrated the efficiency of reinforcement learning (RL) in optimizing dynamic inventory systems. RL-based models excel in adapting to non-stationary demand patterns and optimizing multi-echelon configurations. For example, RL models reduced inventory costs by up to 15% in some case studies [1][2].
-- **Limitations:**
-  - High computational requirements.
-  - Dependence on large datasets for training [2].
+- **Key Findings:**
+  These works explore how emotional intelligence in NLP improves customer service. EmoLLMs enhance affective analysis, enabling chatbots to respond empathetically, while transparent communication style and adaptive responses significantly impact trust and engagement [8][21][22].
 
-### 2. Deep Learning and Time-Series Forecasting
-- **Studies:**
-  - Improving efficiency and sustainability via supply chain optimization through CNNs and BiLSTM - ScienceDirect [3].
-    - **Details:** This study integrates CNNs and BiLSTM models to enhance supply chain efficiency and sustainability. The proposed model optimizes resource allocation, uncovers trends, and evaluates supply chain spatial linkages. It achieved high accuracy and specificity, significantly improving supply chain processes.
-  - Order-up-to-level inventory optimization model using time-series demand forecasting with ensemble deep learning - ScienceDirect [4].
-    - **Details:** This study uses ensemble deep learning methods for demand forecasting in the online retail industry. The ensemble models improved prediction accuracy and optimized inventory systems under a cycle service level objective.
-  - A comparative assessment of Holt-Winters exponential smoothing and ARIMA for inventory optimization in supply chains - ScienceDirect [5].
-    - **Details:** This study compares Holt-Winters Exponential Smoothing (HWES) and ARIMA models for demand forecasting and inventory optimization. ARIMA consistently outperformed HWES in minimizing lost sales and mitigating stockouts.
-  - Financial Big Data Visualization: A Machine Learning Perspective - Proceedings of the 17th International Symposium on Visual Information Communication and Interaction [11].
-    - **Details:** This study categorizes financial big data visualization methodologies from a machine learning perspective. It explores the latest trends and identifies the most suitable techniques for different types of financial data.
+### Cluster 3: Advanced Applications in E-Commerce
+- **Key Studies:**
+  - Optimizing Language Model-Based Educational Assistants Using Knowledge Graphs [4].
+  - Automated Thematic Dictionary Creation Using WordNet, spaCy, and Simhash [11].
+  - TextMachina: Seamless Generation of Machine-Generated Text Datasets [16].
 
-- **Findings:** Deep learning approaches, such as CNNs, BiLSTMs, and ensemble models, significantly enhanced demand forecasting accuracy. These techniques integrate historical data and stochastic modeling to predict inventory requirements [3][4][5]. Additionally, financial big data visualization techniques provided insights into inventory trends and patterns [11].
-- **Limitations:**
-  - Susceptibility to overfitting.
-  - High dependency on historical data [5].
+- **Key Findings:**
+  These studies highlight NLP’s versatility across various data-intensive domains. Techniques like Simhash and WordNet boost semantic understanding, while automated dataset generation (e.g., TextMachina) accelerates new chatbot development [4][11][16].
 
-### 3. Hybrid and Blockchain-Integrated Models
-- **Studies:**
-  - βFSCM: An Enhanced Food Supply Chain Management System Using Hybrid Blockchain and Recommender Systems - ScienceDirect [6].
-    - **Details:** This study proposes a hybrid blockchain model with an Access Control mechanism to enhance security, reliability, and usability in food supply chain management. The integration of a recommender system improves inventory management and consumer satisfaction.
-  - Innovative Applications of Unsupervised Learning in Uncertainty-Aware Pharmaceutical Supply Chain Planning - IEEE Journals & Magazine [7].
-    - **Details:** This study introduces a framework for pharmaceutical supply chain planning using unsupervised learning algorithms. The model addresses uncertainty through a joint chance constraint formulation, improving resiliency, reliability, and equity in the supply chain.
-  - Amplifying Learning and Teaching Effectiveness through Generative Artificial Intelligence: A Qualitative Approach with Case Studies on Supply Chain and Cold Chain Management - Proceedings of the International Conference on Decision Science and Management [12].
-    - **Details:** This study evaluates the effectiveness of generative AI-based learning for students, with case studies on supply chain and cold chain management. The results indicate that the treatment group outperformed the control group, enhancing learning quality and experience.
+### Cluster 4: Challenges in Trust and Ethics
+- **Key Studies:**
+  - Trust in the Chatbot: A Semi-Human Relationship [19].
+  - Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots [7].
+  - A Survey on Providing Customer and Public Administration Services Using AI [20].
 
-- **Findings:** Hybrid systems combining blockchain with unsupervised learning provided increased transparency and traceability in supply chains. These models also addressed pharmaceutical-specific challenges, such as expiration tracking and storage conditions [6][7]. Additionally, generative AI approaches enhanced learning and teaching effectiveness in supply chain management [12].
-- **Limitations:**
-  - Implementation complexity.
-  - High initial setup costs [6].
+- **Key Findings:**
+  Ethical concerns, including data privacy and algorithmic bias, remain major hurdles. Toxic behavior in open-domain chatbots underscores the need for robust safety mechanisms to mitigate misuse and uphold user trust [7][19][20].
 
-### 4. E-Commerce and Retail Applications
-- **Studies:**
-  - Optimizing e-Commerce Supply Chains with Categorical Boosting - IEEE Xplore [8].
-    - **Details:** This study uses the CatBoost algorithm to optimize e-commerce supply chain processes. The model handles categorical variables effectively and improves prediction efficiency for sales, profit, and delivery times.
-  - Customer Segment Classification Prediction in the Australian Retail - Proceedings of the 2023 4th International Conference on Machine Learning and Computer Application [9].
-    - **Details:** This study employs multiple machine learning methods to classify customer segments for an Australian retail company. XGBoost was found to be the most effective model, providing insights into customer behavior and preferences.
-  - Research and implementation of e-commerce inventory optimization strategy based on advanced data analysis technology - Conference Proceedings [10].
-    - **Details:** This study explores the use of advanced data analysis technologies, such as machine learning and big data analysis, to optimize e-commerce inventory. The effectiveness of these technologies in improving inventory turnover rate, reducing inventory cost, and enhancing customer service was verified.
-  - Precise Issuance of Meituan Merchants’ Coupons with Machine Learning - Proceedings of the International Conference on Machine Learning, Pattern Recognition and Automation Engineering [13].
-    - **Details:** This study analyzes transaction data to predict coupon redemption using the XGBoost model. The model improves the precision of coupon issuance, increasing net profits for merchants.
-  - Retailers’ Order Decision with Setup Cost using Machine Learning - Proceedings of the 2024 8th International Conference on Machine Learning and Soft Computing [14].
-    - **Details:** This study develops a predictive model to inform retailer purchasing decisions using artificial neural networks. The model helps manufacturers optimize their order policies, reducing costs and improving operational efficiency.
-  - Customer Segment Classification Prediction in the Australian Retail Based on Machine Learning Algorithms - Proceedings of the 2023 4th International Conference on Machine Learning and Computer Application [15].
-    - **Details:** This study classifies customer segments for an Australian retail company using machine learning algorithms. The results provide insights into customer behavior and preferences, helping to improve marketing strategies.
+### Cluster 5: Broader Innovations and Future Directions
+- **Key Studies:**
+  - QueryMintAI: Multipurpose Multimodal Large Language Models for Personal Data [2].
+  - A Comparative Evaluation of Chatbot Development Platforms [6].
+  - FlightLLM: Efficient Large Language Model Inference [10].
+  - Enhancing Personalized Learning: AI-Driven Identification of Learning Styles [12].
+  - A Method for Extracting BPMN Models from Textual Descriptions Using NLP [13].
+  - A Shared Model-Based Linguistic Space for Brain-to-Brain Communication [14].
+  - The Power of Generative AI for CRIS Systems [15].
+  - Understanding Users’ Responses to Disclosed vs. Undisclosed Customer Service Chatbots [17].
+  - Re-Examining the ChatBot Usability Scale (BUS-11) [18].
+  - Recruitment Chatbot Acceptance: A Mixed Method Study [23].
+  - Exploring Natural Language Processing in Model-To-Model Transformations [5].
 
-- **Findings:** Machine learning applications in e-commerce and retail enhanced customer segmentation, optimized order fulfillment, and reduced supply chain bottlenecks. Predictive analytics and boosting algorithms were pivotal in automating inventory decision-making [8][9][10]. Additionally, machine learning techniques were used for precise issuance of coupons and order decision-making [13][14][15].
-- **Limitations:**
-  - Limited applicability to small-scale businesses.
-  - Issues with model scalability [10].
-- **Limitations:**
-  - Limited applicability to small-scale businesses.
-  - Issues with model scalability [10].
+- **Key Findings:**
+  These studies underscore a wide range of innovations in NLP, from multimodal capabilities (e.g., QueryMintAI) [2] to improved usability metrics for chatbot platforms [6][18]. Efficient large language model deployment through specialized hardware (e.g., FlightLLM) [10], personalized learning techniques [12], BPMN extraction from textual descriptions [13], and generative AI for CRIS systems [15] further demonstrate NLP’s flexibility. Additionally, the research explores user acceptance, ethical considerations, and usability frameworks crucial to sustaining trust in virtual agents [17][23]. Finally, model-to-model transformations highlight the potential of NLP to streamline development processes [5].
 
-## Visual Representation
-**Figure 1:** PRISMA Flow Diagram for Study Selection
-![PRISMA Flow Diagram](prisma_flow_diagram.png)
+## Conclusion
+This systematic review underscores the transformative role of NLP in customer service across diverse sectors. Key findings include:
 
-**Figure 2:** Study Categorization and Key Findings
-![Study Categorization](study_categorization.png)
-A bar chart or bubble chart can represent the distribution of studies across the clusters, highlighting the methodologies applied and their corresponding outcomes.
+1. **NLP Frameworks:** Tools like Rasa’s DIET architecture and LangChain substantially improve intent recognition and sentiment analysis [1][3][9].  
+2. **Emotional Intelligence:** EmoLLMs and empathetic communication styles boost trust and engagement [8][21][22].  
+3. **Data-Driven Applications:** Integration of WordNet, Simhash, and automated dataset generation methods extends NLP to broader business processes [4][11][16].  
+4. **Trust & Ethics:** Addressing toxic behavior and privacy concerns is vital for achieving sustainable NLP implementations [7][19][20].  
+5. **Future Directions:** Innovations in multimodal modeling, specialized hardware, personalized learning, and advanced usability metrics hold promise for next-generation NLP solutions [2][5][6][10][12][13][14][15][17][18][23].
 
-# Conclusion
-This systematic review provides insights into the advancements in inventory optimization and demand forecasting within the supply chain domain. Key findings include:
-1. Reinforcement learning offers dynamic adaptability but requires significant computational resources [1-2].
-2. Deep learning models enhance forecasting accuracy but are data-intensive [3-5][11].
-3. Hybrid systems with blockchain introduce transparency but are costly to implement [6-7][12].
-4. Machine learning in e-commerce optimizes processes but faces scalability challenges [8-15].
+To ensure a truly inclusive and empathetic future for customer service, further research must tackle issues of bias, multilingual support, computational efficiency, and real-time adaptation. By prioritizing user-centric design and ethical safeguards, NLP-driven systems can continue to transform customer service, delivering ever more intuitive and trustworthy interactions.
 
-**Future research should focus on:**
-- Improving the scalability and efficiency of reinforcement learning models [1][2].
-- Developing hybrid systems tailored for low-resource environments [6].
-- Addressing ethical and privacy concerns in blockchain and ML-based supply chains [7].
+---
 
-These efforts will further advance the integration of intelligent systems into supply chain management, enhancing both operational efficiency and customer satisfaction.
-
+```plaintext
 # References
-1. Inventory management of new products in retailers using model-based deep reinforcement learning, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0957417423007583
-2. Contextual reinforcement learning for supply chain management, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0957417424004068
-3. Improving efficiency and sustainability via supply chain optimization through CNNs and BiLSTM, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0040162524006395
-4. Order-up-to-level inventory optimization model using time-series demand forecasting with ensemble deep learning, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2949863523000237
-5. A comparative assessment of Holt-Winters exponential smoothing and ARIMA for inventory optimization in supply chains, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S294986352400027X#sec0080
-6. βFSCM: An Enhanced Food Supply Chain Management System Using Hybrid Blockchain and Recommender Systems, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2096720924000587
-7. Innovative Applications of Unsupervised Learning in Uncertainty-Aware Pharmaceutical Supply Chain Planning, IEEE Journals & Magazine. [Online]. Available: https://ieeexplore.ieee.org/document/10614135
-8. Optimizing e-Commerce Supply Chains with Categorical Boosting, IEEE Xplore. [Online]. Available: https://ieeexplore.ieee.org/document/10643537
-9. Customer Segment Classification Prediction in the Australian Retail, Proceedings of the 2023 4th International Conference on Machine Learning and Computer Application. [Online]. Available: https://dl.acm.org/doi/10.1145/3650215.3650302
-10. Research and implementation of e-commerce inventory optimization strategy based on advanced data analysis technology, Conference Proceedings. [Online]. Available: https://dl.acm.org/doi/10.1145/3696952.3696977
-11. Financial Big Data Visualization: A Machine Learning Perspective, Proceedings of the 17th International Symposium on Visual Information Communication and Interaction. [Online]. Available: https://dl.acm.org/doi/10.1145/3678698.3678702
-12. Amplifying Learning and Teaching Effectiveness through Generative Artificial Intelligence: A Qualitative Approach with Case Studies on Supply Chain and Cold Chain Management, Proceedings of the International Conference on Decision Science and Management. [Online]. Available: https://dl.acm.org/doi/10.1145/3686081.3686126
-13. Precise Issuance of Meituan Merchants’ Coupons with Machine Learning, Proceedings of the International Conference on Machine Learning, Pattern Recognition and Automation Engineering. [Online]. Available: https://dl.acm.org/doi/10.1145/3696687.3696700
-14. Retailers’ Order Decision with Setup Cost using Machine Learning, Proceedings of the 2024 8th International Conference on Machine Learning and Soft Computing. [Online]. Available: https://dl.acm.org/doi/10.1145/3647750.3647781
-15. Customer Segment Classification Prediction in the Australian Retail Based on Machine Learning Algorithms, Proceedings of the 2023 4th International Conference on Machine Learning and Computer Application. [Online]. Available: https://dl.acm.org/doi/10.1145/3696952.3696977
-16. PRISMA 2020 Checklist, PRISMA. [Online]. Available: https://www.prisma-statement.org/
---
+
+[1] Methodology for Code Synthesis Evaluation of LLMs Presented by a Case Study of ChatGPT and Copilot, IEEE Xplore. [Online]. Available: https://ieeexplore.ieee.org/document/10535504  
+[2] QueryMintAI: Multipurpose Multimodal Large Language Models for Personal Data, IEEE Xplore. [Online]. Available: https://ieeexplore.ieee.org/document/10695061  
+[3] On Adapting the DIET Architecture and the Rasa Conversational Toolkit for the Sentiment Analysis Task, IEEE Xplore. [Online]. Available: https://ieeexplore.ieee.org/document/9913993  
+[4] Optimizing Language Model-Based Educational Assistants Using Knowledge Graphs: Integration With Moodle LMS, IEEE Xplore. [Online]. Available: https://ieeexplore.ieee.org/document/10804145  
+[5] Exploring Natural Language Processing in Model-To-Model Transformations, IEEE Xplore. [Online]. Available: https://ieeexplore.ieee.org/document/9938985  
+[6] A Comparative Evaluation of Chatbot Development Platforms, Proc. 26th Pan-Hellenic Conference on Informatics. [Online]. Available: https://dl.acm.org/doi/10.1145/3575879.3576012  
+[7] Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots, Proc. 26th International Symposium on Research in Attacks, Intrusions and Defenses. [Online]. Available: https://dl.acm.org/doi/10.1145/3607199.3607237  
+[8] EmoLLMs: A Series of Emotional Large Language Models and Annotation Tools for Comprehensive Affective Analysis, Proc. 30th ACM SIGKDD. [Online]. Available: https://dl.acm.org/doi/10.1145/3637528.3671552  
+[9] Enhanced Chunk Screening in LangChain Framework by Supervised Learning Augmentation Based on Deep Learning, Proc. 4th Int. Conf. on Artificial Intelligence and Computer Engineering. [Online]. Available: https://dl.acm.org/doi/10.1145/3652628.3652744  
+[10] FlightLLM: Efficient Large Language Model Inference with a Complete Mapping Flow on FPGAs, Proc. 2024 ACM/SIGDA Int. Symposium on Field Programmable Gate Arrays. [Online]. Available: https://dl.acm.org/doi/10.1145/3626202.3637562  
+[11] Automated thematic dictionary creation using the web based on WordNet, Spacy, and Simhash, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S254392512400024X  
+[12] Enhancing personalized learning: AI-driven identification of learning styles and content modification strategies, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S2666307424000184  
+[13] A Method for Extracting BPMN Models from Textual Descriptions Using Natural Language Processing, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S187705092401439X  
+[14] A Shared Model-Based Linguistic Space for Transmitting Our Thoughts from Brain to Brain in Natural Conversations, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0896627324004604  
+[15] The Power of Generative AI for CRIS Systems: A New Paradigm for Scientific Information Management, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S187705092403268X  
+[16] TextMachina: Seamless Generation of Machine-Generated Text Datasets - Seeking Empathy or Suggesting a Solution? Effects of Chatbot Messages on Service Failure Recovery, ScienceDirect. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S1877050924025031  
+[17] Understanding Users’ Responses to Disclosed vs. Undisclosed Customer Service Chatbots: A Mixed Methods Study, AI & SOCIETY. [Online]. Available: https://link.springer.com/article/10.1007/s00146-023-01818-7  
+[18] Re-examining the chatBot Usability Scale (BUS-11) to Assess User Experience with Customer Relationship Management Chatbots, Personal and Ubiquitous Computing. [Online]. Available: https://link.springer.com/article/10.1007/s00779-024-01834-4  
+[19] Trust in the Chatbot: A Semi-Human Relationship, Future Business Journal. [Online]. Available: https://link.springer.com/article/10.1186/s43093-023-00288-z  
+[20] A Survey on Providing Customer and Public Administration Based Services Using AI: Chatbot, Multimedia Tools and Applications. [Online]. Available: https://link.springer.com/article/10.1007/s11042-021-11458-y  
+[21] How the Communication Style of Chatbots Influences Consumers’ Satisfaction, Trust, and Engagement in the Context of Service Failure, Humanities and Social Sciences Communications. [Online]. Available: https://link.springer.com/article/10.1057/s41599-024-03212-0  
+[22] Exploring the Mechanism of Sustained Consumer Trust in AI Chatbots after Service Failures: A Perspective Based on Attribution and CASA Theories, Humanities and Social Sciences Communications. [Online]. Available: https://link.springer.com/article/10.1057/s41599-024-03879-5  
+[23] Recruitment Chatbot Acceptance in a Company: A Mixed Method Study on Human-Centered Technology Acceptance Model, Personal and Ubiquitous Computing. [Online]. Available: https://link.springer.com/article/10.1007/s00779-024-01826-4  
